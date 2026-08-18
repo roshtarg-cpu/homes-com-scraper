@@ -1,0 +1,82 @@
+{
+  "actorSpecification": 1,
+  "name": "homes-com-scraper",
+  "title": "Homes.com Scraper — Real Estate Listings & Property Data",
+  "description": "Scrape property listings from Homes.com. Get addresses, prices, bedrooms, bathrooms, square footage, images and coordinates. Works with Claude, ChatGPT & AI agents via Apify MCP.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "output": {
+    "actorOutputSchemaVersion": 1,
+    "properties": {
+      "scrapedAt": {
+        "type": "string",
+        "template": "{{{scrapedAt}}}"
+      },
+      "url": {
+        "type": "string",
+        "template": "{{{url}}}"
+      },
+      "address": {
+        "type": "string",
+        "template": "{{{address}}}"
+      },
+      "city": {
+        "type": "string",
+        "template": "{{{city}}}"
+      },
+      "state": {
+        "type": "string",
+        "template": "{{{state}}}"
+      },
+      "zipCode": {
+        "type": "string",
+        "template": "{{{zipCode}}}"
+      },
+      "price": {
+        "type": "string",
+        "template": "{{{price}}}"
+      },
+      "bedrooms": {
+        "type": "string",
+        "template": "{{{bedrooms}}}"
+      },
+      "bathrooms": {
+        "type": "string",
+        "template": "{{{bathrooms}}}"
+      },
+      "sqft": {
+        "type": "string",
+        "template": "{{{sqft}}}"
+      },
+      "propertyType": {
+        "type": "string",
+        "template": "{{{propertyType}}}"
+      },
+      "status": {
+        "type": "string",
+        "template": "{{{status}}}"
+      },
+      "listingDate": {
+        "type": "string",
+        "template": "{{{listingDate}}}"
+      },
+      "description": {
+        "type": "string",
+        "template": "{{{description}}}"
+      },
+      "imageUrl": {
+        "type": "string",
+        "template": "{{{imageUrl}}}"
+      },
+      "latitude": {
+        "type": "string",
+        "template": "{{{latitude}}}"
+      },
+      "longitude": {
+        "type": "string",
+        "template": "{{{longitude}}}"
+      }
+    }
+  }
+}
