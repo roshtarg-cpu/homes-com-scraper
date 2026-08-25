@@ -1,7 +1,7 @@
 {
   "actorSpecification": 1,
   "name": "homes-com-scraper",
-  "title": "Homes.com Scraper — Real Estate Listings & Property Data",
+  "title": "Homes.com Scraper \u2014 Real Estate Listings & Property Data",
   "description": "Scrape property listings from Homes.com. Get addresses, prices, bedrooms, bathrooms, square footage, images and coordinates. Works with Claude, ChatGPT & AI agents via Apify MCP.",
   "version": "0.1",
   "buildTag": "latest",
@@ -76,6 +76,38 @@
       "longitude": {
         "type": "string",
         "template": "{{{longitude}}}"
+      }
+    }
+  },
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "fields": {},
+      "views": {
+        "overview": {
+          "title": "Results",
+          "transformation": {
+            "fields": [
+              "scrapedAt",
+              "url",
+              "address",
+              "city",
+              "state",
+              "zipCode",
+              "price",
+              "bedrooms",
+              "bathrooms",
+              "sqft",
+              "propertyType",
+              "status",
+              "listingDate",
+              "description",
+              "imageUrl",
+              "latitude",
+              "longitude"
+            ]
+          }
+        }
       }
     }
   }
